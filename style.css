@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: black;
+    width: 100%;
+}
+#header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content:flex-end;
+    align-items: center;
+}
+ #LOGO_BUSINESS{
+    width: 150px;
+    justify-items: center;
+}
+.carrucel{
+    width: 100%;
+    height: auto;
+    margin: 5opx auto 0;
+    overflow: hidden;
+}
+.slider{
+    display: flex;
+    padding: 0;
+    width: 500%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+.slide{
+    list-style: none;
+    width: 100%;
+}
+.slide img{
+    width: 100%;
+}
+@keyframes slide {
+    0%{margin-left: 0%;}
+    20%{margin-left: 0%;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    95%{margin-left: -300%;}
+
+    100%{margin-left: -400%;}
+    120%{margin-left: -400%;}
+}
+.principal{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 38px;
+    list-style: none;
+    justify-content: center;
+    font-size: 18px;
+    
+}
+.productos_principales{
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+#productos_principales{
+    width: 350px;
+}
+#image_discount{
+    width: 100%;
+
+}
+footer{
+    background-color: #242424
+}
