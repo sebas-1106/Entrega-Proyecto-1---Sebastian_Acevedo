@@ -19,6 +19,16 @@ header{
     justify-content:flex-end;
     align-items: center;
 }
+.principal{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 38px;
+    list-style: none;
+    justify-content: center;
+    font-size: 18px;
+    
+}
  #LOGO_BUSINESS{
     width: 150px;
     justify-items: center;
@@ -73,51 +83,63 @@ header{
     border-radius: 500px;
 } */
 .carrusel_container{
+    width: 50%;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
-    height: auto;
-    margin: 0;
-    overflow: hidden;
-    margin-bottom: 10px;
+    align-items: center;
+    align-content: center;
 }
 .carrusel{
-    display: flex;
-    flex-direction: row;
-    padding: 0;
-    width: 700%;
-    animation: 20s infinite alternate ease-in-out;
+    animation: slider 20s infinite alternate ease-in-out;
 }
 .Slide{
-    list-style: none;
-    width: 100%;
+        display: flex;
+        flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
 }
 .Slide img{
-    width: 400px;
+    width: 300px;
+    overflow:hidden;
 }
 
-.description{
-    background: white;
-    padding: 10px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+#description{
     text-align: center;
-    font-weight: bold;
+}
+@keyframes slider {
+    0%{margin-left: 0%;}
+    20%{margin-left: 0%;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    95%{margin-left: -300%;}
+
+    100%{margin-left: -400%;}
+    120%{margin-left: -400%;}
+
+    125%{margin-left: -500%;}
+    145%{margin-left: -500%;}
+
+    150%{margin-left: -600%;}
+    170%{margin-left: -600%;}
+
+    175%{margin-left: -700%;}
+    195%{margin-left: -700%;}
+
+    200%{margin-left: -800%;}
+    220%{margin-left: -800%;}
 }
 
 
-.principal{
-    color: white;
-    display: flex;
-    flex-direction: row;
-    gap: 38px;
-    list-style: none;
-    justify-content: center;
-    font-size: 18px;
-    
-}
 .productos_principales{
     padding: 30px;
     display: flex;
