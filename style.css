@@ -11,7 +11,8 @@ header{
     background-color: black;
     width: 100%;
 }
-#header{
+.header{
+    right: 15%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -29,7 +30,14 @@ header{
     font-size: 18px;
     
 }
- #LOGO_BUSINESS{
+#logo{
+    
+}
+#catalogo{
+    background-color: black;
+    color: white;
+}
+.LOGO_BUSINESS{
     width: 150px;
     justify-items: center;
 }
@@ -69,26 +77,25 @@ header{
     100%{margin-left: -400%;}
     120%{margin-left: -400%;}
 }
-/* .botones{
+ /* .botones{
     display: flex;
     flex-direction: row;
     justify-content: center;
     list-style: none;
     gap: 20px;
 }
-#boton{
+.boton{
     background-color: orange;
     font-size: 45px;
     padding: 15px;
     border-radius: 500px;
 } */
 .carrusel_container{
-    width: 50%;
+    width: 90%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+    overflow: hidden;
 }
 .carrusel{
     animation: slider 20s infinite alternate ease-in-out;
@@ -140,13 +147,13 @@ header{
 }
 
 
-.productos_principales{
+#productos_principales{
     padding: 30px;
     display: flex;
     flex-direction: row;
     gap: 15px;
 }
-#productos_principales{
+.productos_principales{
     width: 350px;
 }
 .imagenes{
@@ -160,18 +167,20 @@ header{
     flex-direction: column;
     justify-items: center;
     gap: 30px;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
     
 }
 #pregunta li{
-    
     list-style: none;
     background-color: white;
-    width: 50%;
+    width: 70%;
     box-shadow: 5px 5px 5px ;
     padding: 10px;
     border-radius: 10px;
 }
-#botonP{
+.botonP{
     background-color: red;
     font-size: 14px;
     padding: 6px;
@@ -188,7 +197,9 @@ header{
     border-radius: 300px;
     
 }
-
+.product{
+    width: 300px;
+}
 #image_discount{
     width: 100%;
 
@@ -209,6 +220,7 @@ header{
 #track:hover{
     width: 50%;
     cursor: pointer;
+    transition: 2s
 }
 .consulta  img{
     width: 45%;
