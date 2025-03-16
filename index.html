@@ -5,40 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/LOGO-BUSINESS.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <title>
         Business Colombia | Calidad, estilo y rentabilidad para tu negocio
     BUSINESS COLOMBIA</title>
 </head>
 <body>
     <header>
-        
-        <section id="logo">
-            <img src="./assets/LOGO-BUSINESS.png" alt="LOGO-BUSINESS" class="LOGO_BUSINESS">
+            
+        <!-- <section class="icon-container"> -->
+        <!-- <img src="./assets/login.png" alt="login" class="loginandcar">
+        <img src="./assets/carrito.png" alt="carrito" class="loginandcar"> -->
+        <section class="logos">
+            <i class="fa-solid fa-user icon" id="userIcon"></i>
+            <a href="./index.html"><img src="./assets/LOGO-BUSINESS.png" alt="LOGO-BUSINESS" class="LOGO_BUSINESS" id="logo" ></a> 
+            
+            <i class="fa-solid fa-bag-shopping icon" id="cartIcon"></i>
         </section>
-        <section class="header">
-        <img src="./assets/login.png" alt="login" class="loginandcar">
-        <img src="./assets/carrito.png" alt="carrito" class="loginandcar">
-    </section>
+
+    <section class="header">
         <ul class="principal">
-            <li>Inicio</li>
-            <li><label for="catalogo"></label>
-            <select name="catalogo" id="catalogo">
+            <li id="inicio"><a href="">Inicio</a></li>
+            <li id="list"><label for="catalogo"></label>
+        <select name="catalogo" id="catalogo">
             <option value="Catalogo">Catalogo</option>    
             <option value="Marcas">Marcas</option>
-        <option value="Lo_mas_vendido">Lo mas vendido</option>
-        <option value="Gorras">Gorras</option>
-        <option value="Activos_digitales">Activo digitales</option>
-        <option value="Linea_business_original">Linea Business Original</option>
-        <option value="Cubanos">Cubanos</option>
-        <option value="Linea_Economica">Linea Economica</option>
-        <option value="Relojeras">Relojeras</option>
-        <option value="Niños">Niños</option>
-    </select>
+            <option value="Lo_mas_vendido">Lo mas vendido</option>
+            <option value="Gorras">Gorras</option>
+            <option value="Activos_digitales">Activo digitales</option>
+            <option value="Linea_business_original">Linea Business Original</option>
+            <option value="Cubanos">Cubanos</option>
+            <option value="Linea_Economica">Linea Economica</option>
+            <option value="Relojeras">Relojeras</option>
+            <option value="Niños">Niños</option>
+        </select>
             </li>
-            <li>Nuestras Marcas</li>
-            <li>Academia Business</li>
-            <li>Soporte Business</li>
+            <li id="marcas"><i class="fa-solid fa-fire"></i>Nuestras Marcas</li>
+            <li id="p_combo"><i class="fa-solid fa-crown"></i>Personaliza tu combo</li>
+            <li id="soporte"><i class="fa-solid fa-headset"></i>Soporte Business</li>
         </ul>
+    </section>
     </header>
 
     <main>
@@ -80,12 +87,13 @@
                 <a href="#slide5" class="boton">5</a>
             </li>
             </ul> -->
-            
+            <h2 id="PP">productos principales</h2>
             <section id="productos_principales">
-                <img src="./assets/watches_image.png" alt="watches_image" class="productos_principales">
-                <img src="./assets/caps_image.png" alt="caps_image"  class="productos_principales">
-                <img src="./assets/technology_image.png" alt="technology_image" class="productos_principales">
-                <img src="./assets/combos_image.png" alt="combos_image" class="productos_principales">
+                
+                <a href=""><img src="./assets/watches_image.png" alt="watches_image" class="productos_principales"></a>
+                <a href=""><img src="./assets/caps_image.png" alt="caps_image"  class="productos_principales"></a>
+                <a href=""><img src="./assets/technology_image.png" alt="technology_image" class="productos_principales"></a>
+                <a href=""><img src="./assets/combos_image.png" alt="combos_image" class="productos_principales"></a>
             </section>
             <h2>Combos Emprender💸🤑</h2>
 
@@ -142,99 +150,112 @@
         <img src="./assets/image_discount.png" alt="image_discount" id="image_discount">
 
         <h2>lo más vendido</h2>
-        <h2>PRODUCTOS 15</h2>
+        
         <section id="productosVendidos">
 
             <section class="SlideProductos">
-                <img src="./assets/watches/Cartier/Cartier_santos_Aftermarket_Diamonds.png" alt=" Cartier santos Aftermarket Diamonds" class="product">
-                <p class="productName"> Cartier santos Aftermarket Diamonds</p>
+                <img src="./assets/watches/Richard Mille/Richard_Mille_RM_011_Bebé_Azul_Cerámica.png" alt="Richard Mille RM 035" class="product">
+                <p class="productName"> Richard Mille RM 035</p>
+                <button class="a_carrito">agregar al carrito</button>
             </section>
+            
             <section class="SlideProductos">
                 <img src="./assets/watches/Technomarine/Technomarine_beige_dorado.png" alt=" Technomarine Beige Dorado" class="product">
                 <p class="productName"> Technomarine Beige Dorado</p>
+                <button class="a_carrito">agregar al carrito</button>
             </section>
             <section class="SlideProductos">
                 <img src="./assets/watches/Hublot/Hublot_Big_Bang_Meca_10.png" alt=" Hublot Big Bang Meca-10" class="product">
                 <p class="productName"> Hublot Big Bang Meca-10</p>
+                <button class="a_carrito">agregar al carrito</button>
             </section>
             <section class="SlideProductos">
                 <img src="./assets/watches/AP/Audemars_Piguet_Royal_Oak_Chronograph.png" alt=" Audemars Piguet Royal Oak Chronograph" class="product">
                 <p class="productName"> Audemars Piguet Royal Oak Chronograph</p>
+                <button class="a_carrito">agregar al carrito</button>
             </section>
             
             <section class="SlideProductos">
                 <img src="./assets/watches/Rolex/Rolex_GMT_Master_II_Yellow_Gold.png" alt=" Rolex GMT-Master II Yellow Gold" class="product">
                 <p class="productName"> Rolex GMT-Master II Yellow Gold</p>
+                <button class="a_carrito">agregar al carrito</button>
             </section>
             
             
             <section class="SlideProductos">
                 <img src="./assets/watches/AP/Audemars_Piguet_Royal_Oak_Concept_spiderman.png" alt=" Audemars Piguet Royal Oak Concept Spiderman" class="product">
                 <p class="productName"> Audemars Piguet Royal Oak Concept Spiderman</p>
+                <button class="a_carrito">agregar al carrito</button>
             </section>
         
-
             <section class="SlideProductos">
-                <img src="./assets/watches/Richard Mille/Richard_Mille_RM_011_Bebé_Azul_Cerámica.png" alt=" Richard Mille RM 035" class="product">
-                <p class="productName"> Richard Mille RM 035</p>
+                <img src="./assets/watches/Cartier/Cartier_santos_Aftermarket_Diamonds.png" alt=" Cartier santos Aftermarket Diamonds" class="product">
+                <p class="productName"> Cartier santos Aftermarket Diamonds</p>
+                <button class="a_carrito">agregar al carrito</button>
             </section>
-
-
+            
             <section class="SlideProductos">
                 <img src="./assets/watches/Cartier/cartier_santos_circones_negros.png" alt=" Cartier Santos Circones Negros" class="product">
                 <p class="productName"> Cartier Santos Circones Negros</p>
+                <button class="a_carrito">agregar al carrito</button>
             </section>
             
 
             <section class="SlideProductos">
                 <img src="./assets/watches/Technomarine/Tchmrn_Ocean_Azul_Tablero_Azul_Plateado.png" alt=" Technomarine Ocean Azul Tablero Azul - Plateado" class="product">
                 <p class="productName"> Technomarine Ocean Azul Tablero Azul - Plateado</p>
+                <button class="a_carrito">agregar al carrito</button>
             </section>
             
             <section class="SlideProductos">
                 <img src="./assets/watches/Hublot/Hublot_Big_Bang_Ferrari.png" alt=" Hublot Big Bang Ferrari" class="product">
                 <p class="productName"> Hublot Big Bang Ferrari</p>
+                <button class="a_carrito">agregar al carrito</button>
             </section>
             
             <section class="SlideProductos">
-                <img src="./assets/watches/AP/Audemars Piguet Royal Oak Concept.png" alt=" Audemars Piguet Royal Oak Concept" class="product">
+                <img src="./assets/watches/AP/Audemars_Piguet_Royal_Oak_Concept.png" alt=" Audemars Piguet Royal Oak Concept" class="product">
                 <p class="productName"> Audemars Piguet Royal Oak Concept</p>
+                <button class="a_carrito">agregar al carrito</button>
             </section>
             
             <section class="SlideProductos">
-                <img src="./assets/watches/Cartier/Cartier_Santos_Circones Negro_Tablero_Dorado.png" alt=" Cartier Santos Circones Negro Tablero Dorado" class="product">
+                <img src="./assets/watches/Cartier/Cartier_Santos_Circones_Negro_Tablero_Dorado.png" alt=" Cartier Santos Circones Negro Tablero Dorado" class="product">
                 <p class="productName"> Cartier Santos Circones Negro Tablero Dorado</p>
+                <button class="a_carrito">agregar al carrito</button>
             </section>
             
             <section class="SlideProductos">
                 <img src="./assets/watches/Rolex/Rolex_GMT_Master_II.png" alt=" Rolex GMT-Master II" class="product">
                 <p class="productName"> Rolex GMT-Master II</p>
+                <button class="a_carrito">agregar al carrito</button>
             </section>
             
             <section class="SlideProductos">
-                <img src="./assets/watches/Richard Mille/Richard_Mille_27_03_Tourbillon_Rafael_Nadal.png" alt=" Richard Mille 27-03 Tourbillon Rafael Nadal" class="product">
-                <p> Richard Mille 27-03 Tourbillon Rafael Nadal</p>
+                <img src="./assets/watches/Richard Mille/Richard_Mille_Tourbillon_Rafael_Nadal.png" alt="Richard Mille 27-03 Tourbillon Rafael Nadal" class="product">
+                <p class="productName"> Richard Mille 27-03 Tourbillon Rafael Nadal</p>
+                <button class="a_carrito">agregar al carrito</button>
             </section>
             
             <section class="SlideProductos">
                 <img src="./assets/watches/Rolex/Rolex_Daytona_Platinum_Ice_Blue.png" alt=" Rolex Daytona Platinum Ice Blue" class="product">
-                <p> Rolex Daytona Platinum Ice Blue</p>
+                <p class="productName"> Rolex Daytona Platinum Ice Blue</p>
+                <button class="a_carrito">agregar al carrito</button>
             </section>
         </section>
-        <section class="marca">
-            <img src="./assets/imageAP.png" alt="imageAP">
-            <img src="./assets/image_cartier.png" alt="image_cartier">
-            <img src="./assets/image_hublot.png" alt="image_hublot">
-            <img src="./assets/image_richard_mille.png" alt="image_richard_mille">
-            <img src="./assets/image_rolex.png" alt="image_rolex">
-            <img src="./assets/image_tissot.png" alt="image_tissot">
+        <section class="marcas">
+            <a href=""><img src="./assets/imageAP.png" alt="imageAP"></a>
+            <a href=""><img src="./assets/image_cartier.png" alt="image_cartier"></a>
+            <a href=""><img src="./assets/image_hublot.png" alt="image_hublot"></a>
+            <a href=""><img src="./assets/image_richard_mille.png" alt="image_richard_mille"></a>
+            <a href=""><img src="./assets/image_rolex.png" alt="image_rolex"></a>
+            <a href=""><img src="./assets/image_tissot.png" alt="image_tissot"></a>
         </section>
         
         <img class="imagenes" src="./assets/image-perfect_combo.png" alt="image-perfect_combo">
         
-        <img class="imagenes" src="./assets/image_chatGPT.png" alt="image_chatGPT">
         <section class="preguntas">
-            <h2>preguntas frecuentes</h2>
+            <h2 id="Pfrecuentes">preguntas frecuentes</h2>
             <ul id="pregunta">
 
             <li class="pregunta">Tiempos de Envío Nacional <button class="botonP">+</button></li>
@@ -259,22 +280,22 @@
 
     <footer>
         <section class="menu_footer">
-            <ul>
+            
             <img src="./assets/LOGO-BUSINESS.png" alt="LOGO-BUSINESS" class="LOGO_BUSINESS">
             <h2>Business colombia</h2>
             <p>rentabilidad en cada segundo</p>
-            </ul>
+            
         </section>
         <label for="email">suscribete a nuestro email</label>
         <input type="email" id="email">
         <button id="suscription">suscribete</button>
         <section class="menu_footer">
-            <ul>
-                <li>Inicio</li>
-                <li>Catalogo</li>
-                <li>Marcas</li>
-                <li>Rastrea tu guia</li>
-                <li>Acamedia Business</li>
+            <ul class="principal_footer">
+                <li id="Inicio"><a href="">Inicio</a></li>
+                <li id="List">Catalogo</li>
+                <li id="Marcas"><i class="fa-solid fa-fire"></i>Nuestras Marcas</li>
+                <li id="P_combo"><i class="fa-solid fa-crown"></i>Personaliza tu combo</li>
+                <li id="Soporte"><i class="fa-solid fa-headset"></i>Soporte Business</li>
             </ul>
         </section>
         <section class="menu_footer">
