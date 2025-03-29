@@ -13,10 +13,9 @@ main{
 header{
     background-color: black;
     width: 100%;
-    
+    position: fixed;
 }
 .logos{
-    right: 15%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -42,7 +41,7 @@ header{
     gap: 38px;
     list-style: none;
     justify-content: center;
-    font-size: 18px;
+    font-size: 20px;
     
 }
 .icon-container {
@@ -67,17 +66,17 @@ header{
     color: white;
 }
 .LOGO_BUSINESS{
-    width: 150px;
+    width: 120px;
     justify-items: center;
 }
 .carrucel{
     width: 100%;
     height: auto;
-    margin: 1;
     overflow: hidden;
     margin-bottom: 10px;
 }
 .slider{
+    margin-top: 160px;
     display: flex;
     padding: 0;
     width: 500%;
@@ -106,74 +105,6 @@ header{
     100%{margin-left: -400%;}
     120%{margin-left: -400%;}
 }
- /* .botones{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    list-style: none;
-    gap: 20px;
-}
-.boton{
-    background-color: orange;
-    font-size: 45px;
-    padding: 15px;
-    border-radius: 500px;
-} */
-.carrusel_container{
-    width: 90%;
-    display: flex;
-    flex-wrap: nowrap;
-    margin-bottom: 20px;
-    overflow: hidden;
-}
-.carrusel{
-    animation: slider 20s infinite alternate ease-in-out;
-}
-.Slide{
-        display: flex;
-        flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-
-}
-.Slide img{
-    width: 300px;
-    overflow:hidden;
-}
-
-#description{
-    text-align: center;
-}
-@keyframes slider {
-    0%{margin-left: 0%;}
-    20%{margin-left: 0%;}
-
-    25%{margin-left: -100%;}
-    45%{margin-left: -100%;}
-
-    50%{margin-left: -200%;}
-    70%{margin-left: -200%;}
-
-    75%{margin-left: -300%;}
-    95%{margin-left: -300%;}
-
-    100%{margin-left: -400%;}
-    120%{margin-left: -400%;}
-
-    125%{margin-left: -500%;}
-    145%{margin-left: -500%;}
-
-    150%{margin-left: -600%;}
-    170%{margin-left: -600%;}
-
-    175%{margin-left: -700%;}
-    195%{margin-left: -700%;}
-
-    200%{margin-left: -800%;}
-    220%{margin-left: -800%;}
-}
 
 
 #productos_principales{
@@ -197,8 +128,10 @@ header{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Se adapta al tamaño de la pantalla */
     gap: 20px;
-    width: 60%;
+    width: 80%;
     margin-bottom: 20px;
+    margin-right: 10%;
+    margin-left: 10%;
 }
 .SlideProductos{background-color: white;
     padding: 10px;
@@ -208,9 +141,9 @@ header{
 }
 .SlideProductos img{
     width: 100%;
-            height: 250px; /* Altura fija */
-            object-fit:cover; /* Ajuste para que todas las imágenes se vean uniformes */
-            border-radius: 5px;
+    height: 250px;
+    object-fit:cover; 
+    border-radius: 5px;
 }
 a{
     text-decoration: none;
@@ -218,8 +151,8 @@ a{
 }
 .productName{
     font-size: 16px;
-            font-weight: bold;
-            margin-top: 10px;
+    font-weight: bold;
+    margin-top: 10px;
 }
 .a_carrito{
     background-color: #f20e0e;
@@ -247,7 +180,6 @@ a{
     
 }
 #Pfrecuentes{
-    width: 50%;
     text-align: center;
     text-transform: uppercase;
     margin: 20px;
@@ -256,29 +188,37 @@ a{
     background-color: white;
 }
 #pregunta{
+    width: 80%;
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    justify-items: center;
-    gap: 30px;
-    flex-wrap: nowrap;
-    align-content: center;
-    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
     
 }
-#pregunta li{
-    list-style: none;
-    background-color: white;
-    width: 70%;
-    box-shadow: 5px 5px 5px ;
+#pregunta li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 10px;
     border-radius: 10px;
-}
-.botonP{
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+  .botonP {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
     background-color: red;
-    font-size: 14px;
-    padding: 6px;
-    border-radius: 100px;
-}
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }
 
 .product{
     width: 300px;
@@ -293,22 +233,28 @@ a{
     justify-content: center;
     gap: 30px;
     background-color: #eff0f5;
+    
 
 }
 #mujer:hover{
-    width: 50%;
+    width:  48%;
     cursor: pointer;
     transition: 2s;
 }
 #track:hover{
-    width: 50%;
+    width:  48%;
     cursor: pointer;
-    transition: 2s
+    transition: 2s;
 }
-.consulta  img{
+.consulta img{
     width: 45%;
     padding: 20px;
     border-radius: 75px;
+    overflow: hidden;
+}
+
+footer{
+    background-color: #242424;
 }
 .menu_footer ul{
     display: flex;
@@ -317,8 +263,48 @@ a{
     list-style: none;
     color: white;
     gap: 70px;
-}
-footer{
+    font-size: 20px;
     
-    background-color: #242424
+}
+.menu_footer ul li:hover{
+    color: #ffcc00;
+    cursor: pointer;
+}
+#Inicio:hover, #List:hover, #Marcas:hover, #P_combo:hover, #Soporte:hover{
+    color: #ffcc00;
+    cursor: pointer;
+}
+#suscription{
+    background-color:#ea070a;
+    width: 120px;
+    padding: 15px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-bottom: 20px;
+}
+#email{
+    background-color: #ffffff;
+    color: #000000;
+    opacity: 75%;
+}
+#titleFooter{
+    color: white;
+    font-size: 35px;
+}
+#rentability{
+    color: #ea070a;
+    font-size: 22px;
+}
+footer h3{
+    color: white;
+}
+footer p{
+    color: white;
+}
+.footer{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
