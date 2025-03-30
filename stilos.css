@@ -1,0 +1,74 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.nav {
+    background: #333;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Checkbox oculto */
+#menu-toggle {
+    display: none;
+}
+
+/* Botón hamburguesa */
+.menu-btn {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    display: none; /* Oculto en pantallas grandes */
+}
+
+/* Lista de navegación */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilos para móviles */
+@media (max-width: 768px) {
+    .menu-btn {
+        display: block; /* Se muestra en móviles */
+    }
+
+    .nav-links {
+        display: none; /* Oculto por defecto */
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Mostrar menú cuando el checkbox está activo */
+    #menu-toggle:checked ~ .nav-links {
+        display: flex;
+    }
+
+    .nav-links li {
+        padding: 10px 0;
+    }
+}
