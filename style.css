@@ -254,6 +254,12 @@ a{
     gap: 30px;
     background-color: #eff0f5;
 }
+.consulta img{
+    width: 45%;
+    padding: 20px;
+    border-radius: 75px;
+    overflow: hidden;
+}
 #mujer:hover{
     width:  48%;
     cursor: pointer;
@@ -264,12 +270,7 @@ a{
     cursor: pointer;
     transition: 2s;
 }
-.consulta img{
-    width: 45%;
-    padding: 20px;
-    border-radius: 75px;
-    overflow: hidden;
-}
+
 
 footer{
     background-color: #242424;
@@ -286,6 +287,7 @@ footer{
     color: white;
     gap: 70px;
     font-size: 20px;
+    margin-bottom: 20px;
     
 }
 .menu_footer ul li:hover{
@@ -302,16 +304,14 @@ footer{
     background-color:#ea070a;
     width: 120px;
     padding: 15px;
-    border-top-left-radius: 12px;
-    border-bottom-left-radius: 12px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+    border-radius: 20px;
     margin-bottom: 20px;
 }
 #email{
     background-color: #ffffff;
     color: #000000;
     opacity: 75%;
+    border-radius: 20px;
 }
 #titleFooter{
     color: white;
@@ -350,6 +350,7 @@ footer p{
         background-color: black;
         width: 100%;
         position: fixed;
+        z-index: 10000;
     }
     .logos{
         display: flex;
@@ -466,7 +467,39 @@ footer p{
         width: 270px;
     }
     #imagen_perfect_combo{
-        width: 100%;
+        display: none;
+        width: 100%; /* o el tamaño que prefieras */ 
+    }
+    .contenedor_perfect_combo{
+        position: relative;
+        display: none;
+    }
+    .contenedor_perfect_combo p{
+        width: 20%;
+        position: absolute;
+        top: 55%;
+        left: 17.5%;
+        
+    }
+    #contenido1{
+        width: 30%;
+        position: absolute;
+        top: 45%;
+        left: 32%;
+        transform: translate(-50%, -50%);
+        color: rgb(0, 0, 0); /* o el color que prefieras */
+        font-size: 2rem;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    }
+    #contenido2{
+        width: 30%;
+        position: absolute;
+        top: 35%;
+        left: 32%;
+        transform: translate(-50%, -50%);
+        color: rgb(0, 0, 0); /* o el color que prefieras */
+        font-size: 14px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
     }
     
     #Image_Categorias{
@@ -486,7 +519,8 @@ footer p{
         border-radius: 8px;
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
         text-align: center;
-        width: 70%;
+        width: 90%;
+        cursor: pointer;
     }
     
     .SlideProductos img{
@@ -527,7 +561,6 @@ footer p{
     .marcas img {
         width: 100%;
         border-radius: 300px;
-        
     }
         
     #Pfrecuentes{
@@ -573,22 +606,20 @@ footer p{
     .consulta{
         display: flex;
         flex-direction: row;
-        align-items: center ;
         gap: 10px;
         background-color: #eff0f5;
     }
     .consulta img{
-        width: 45%;
+        width: 300px;
         border-radius: 75px;
-        overflow: hidden;
     }
     #mujer:hover{
-        width:48%;
+        width: 350px;
         cursor: pointer;
         transition: 2s;
     }
     #track:hover{
-        width:48%;
+        width: 350px;
         cursor: pointer;
         transition: 2s;
     }
@@ -604,36 +635,34 @@ footer p{
         color: white;
         gap: 40px;
         font-size: 14px;
+        margin-bottom: 30px;
     }
     
     #Inicio:hover, #List:hover, #Marcas:hover, #P_combo:hover, #Soporte:hover{
         color: #ffcc00;
         cursor: pointer;
         text-decoration: underline;
-        
     }
     #suscription{
         background-color:#ea070a;
-        width: 80px;
+        width: 120px;
         padding: 15px;
-        border-top-left-radius: 12px;
-        border-bottom-left-radius: 12px;
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
         margin-bottom: 20px;
+        border-radius: 20px;
     }
     #email{
         background-color: #ffffff;
         color: #000000;
         opacity: 75%;
+        border-radius: 20px;
     }
     #titleFooter{
         color: white;
-        font-size: 25px;
+        font-size: 20px;
     }
     #rentability{
         color: #ea070a;
-        font-size: 22px;
+        font-size: 18px;
     }
     footer h3{
         color: white;
@@ -669,7 +698,7 @@ footer p{
         background-color: black;
         width: 100%;
         position: fixed;
-        
+        z-index: 10000;
     }
     .logos{
         display: flex;
@@ -761,21 +790,58 @@ footer p{
     }
         
     #productos_principales{
-        padding: 30px;
+        
         display: flex;
-        flex-direction: column;
-        gap: 15px;
-        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     #PP{
         text-transform: uppercase;
         text-align: center;
     }
     .productos_principales{
-        width: 250px;
+        width: 270px;
     }
     #imagen_perfect_combo{
         width: 100%;
+        display: block;
+    }
+    
+    #imagen_perfect_combo{
+        display: none;
+        width: 100%;
+    }
+    .contenedor_perfect_combo{
+        position: relative;
+        display:none;
+    }
+    .contenedor_perfect_combo p{
+        width: 20%;
+        position: absolute;
+        top: 55%;
+        left: 17.5%;
+        
+    }
+    #contenido1{
+        width: 30%;
+        position: absolute;
+        top: 45%;
+        left: 32%;
+        transform: translate(-50%, -50%);
+        color: rgb(0, 0, 0); /* o el color que prefieras */
+        font-size: 2rem;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    }
+    #contenido2{
+        width: 30%;
+        position: absolute;
+        top: 35%;
+        left: 32%;
+        transform: translate(-50%, -50%);
+        color: rgb(0, 0, 0); /* o el color que prefieras */
+        font-size: 14px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
     }
     #Image_Categorias{
         width: 100%;
@@ -784,24 +850,24 @@ footer p{
     #productosVendidos{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Se adapta al tamaño de la pantalla */
-        gap: 20px;
-        width: 80%;
-        margin-bottom: 20px;
-        margin-right: 10%;
-        margin-left: 10%;
+        gap: 15px;
+        width: 90%;
+        
     }
-    .SlideProductos{background-color: white;
+    .SlideProductos{
+        background-color: white;
         padding: 10px;
         border-radius: 8px;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
         text-align: center;
+        width: 90%;
     }
     
     .SlideProductos img{
         width: 100%;
-        height: 250px;
         object-fit:cover; 
         border-radius: 5px;
+        cursor: pointer;
     }
     a{
         text-decoration: none;
@@ -886,17 +952,17 @@ footer p{
         background-color: #eff0f5;
     }
     .consulta img{
-        width: 45%;
+        width: 460px;
         border-radius: 75px;
         overflow: hidden;
     }
     #mujer:hover{
-        width:48%;
+        width: 500px;
         cursor: pointer;
         transition: 2s;
     }
     #track:hover{
-        width:48%;
+        width: 500px;
         cursor: pointer;
         transition: 2s;
     }
@@ -912,6 +978,7 @@ footer p{
         color: white;
         gap: 40px;
         font-size: 18px;
+        margin-bottom: 30px;
     }
     
     #Inicio:hover, #List:hover, #Marcas:hover, #P_combo:hover, #Soporte:hover{
@@ -924,16 +991,14 @@ footer p{
         background-color:#ea070a;
         width: 100px;
         padding: 15px;
-        border-top-left-radius: 12px;
-        border-bottom-left-radius: 12px;
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
+        border-radius: 20px;
         margin-bottom: 20px;
     }
     #email{
         background-color: #ffffff;
         color: #000000;
         opacity: 75%;
+        border-radius: 20px;
     }
     #titleFooter{
         color: white;
@@ -957,7 +1022,144 @@ footer p{
 }
 @media (min-width: 768px) and (max-width: 1024px){
 
+    header{
+        background-color: black;
+        width: 100%;
+        position: fixed;
+        z-index: 10000;
+    }
+    
+    #productos_principales{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+    #PP{
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .productos_principales{
+        width: 300px;
+    }
+    
+    #imagen_perfect_combo{
+        display: block;
+        width: 100%; /* o el tamaño que prefieras */ 
+    }
+    .contenedor_perfect_combo{
+        position: relative;
+        display: inline-block;
+    }
+    .contenedor_perfect_combo p{
+        width: 20%;
+        position: absolute;
+        top: 55%;
+        left: 17.5%;
+        
+    }
+    #contenido1{
+        width: 30%;
+        position: absolute;
+        top: 45%;
+        left: 32%;
+        transform: translate(-50%, -50%);
+        color: rgb(0, 0, 0); /* o el color que prefieras */
+        font-size: 2rem;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    }
+    #contenido2{
+        width: 30%;
+        position: absolute;
+        top: 35%;
+        left: 32%;
+        transform: translate(-50%, -50%);
+        color: rgb(0, 0, 0); /* o el color que prefieras */
+        font-size: 14px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    }
+    .marcas{
+        background-color: black;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        
+    }
+    .marcas img {
+        width: 150px;
+        border-radius: 300px;
+        
+    }
 }
 @media (min-width: 1025px) {
 
+    header{
+        background-color: black;
+        width: 100%;
+        position: fixed;
+        z-index: 10000;
+    }
+    
+    #productos_principales{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+    #PP{
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .productos_principales{
+        width: 300px;
+    }
+    #imagen_perfect_combo{
+        display: block;
+        width: 100%; /* o el tamaño que prefieras */ 
+    }
+    .contenedor_perfect_combo{
+        position: relative;
+        display: inline-block;
+    }
+    .contenedor_perfect_combo p{
+        width: 20%;
+        position: absolute;
+        top: 55%;
+        left: 17.5%;
+        
+    }
+    #contenido1{
+        width: 30%;
+        position: absolute;
+        top: 45%;
+        left: 32%;
+        transform: translate(-50%, -50%);
+        color: rgb(0, 0, 0); /* o el color que prefieras */
+        font-size: 2rem;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    }
+    #contenido2{
+        width: 30%;
+        position: absolute;
+        top: 35%;
+        left: 32%;
+        transform: translate(-50%, -50%);
+        color: rgb(0, 0, 0); /* o el color que prefieras */
+        font-size: 14px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    }
+    .marcas{
+        background-color: black;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        
+    }
+    .marcas img {
+        width: 150px;
+        border-radius: 300px;
+        
+    }
 }
