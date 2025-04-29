@@ -487,7 +487,7 @@ footer p{
         top: 45%;
         left: 32%;
         transform: translate(-50%, -50%);
-        color: rgb(0, 0, 0); /* o el color que prefieras */
+        color: rgb(0, 0, 0);
         font-size: 2rem;
         text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
     }
@@ -497,7 +497,7 @@ footer p{
         top: 35%;
         left: 32%;
         transform: translate(-50%, -50%);
-        color: rgb(0, 0, 0); /* o el color que prefieras */
+        color: rgb(0, 0, 0);
         font-size: 14px;
         text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
     }
@@ -820,8 +820,7 @@ footer p{
         width: 20%;
         position: absolute;
         top: 55%;
-        left: 17.5%;
-        
+        left: 17.5%;  
     }
     #contenido1{
         width: 30%;
@@ -829,7 +828,7 @@ footer p{
         top: 45%;
         left: 32%;
         transform: translate(-50%, -50%);
-        color: rgb(0, 0, 0); /* o el color que prefieras */
+        color: rgb(0, 0, 0);
         font-size: 2rem;
         text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
     }
@@ -839,7 +838,7 @@ footer p{
         top: 35%;
         left: 32%;
         transform: translate(-50%, -50%);
-        color: rgb(0, 0, 0); /* o el color que prefieras */
+        color: rgb(0, 0, 0);
         font-size: 14px;
         text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
     }
@@ -1057,6 +1056,9 @@ footer p{
         position: absolute;
         top: 55%;
         left: 17.5%;
+        font-size: 18px;
+        font-style:italic;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         
     }
     #contenido1{
@@ -1065,7 +1067,7 @@ footer p{
         top: 45%;
         left: 32%;
         transform: translate(-50%, -50%);
-        color: rgb(0, 0, 0); /* o el color que prefieras */
+        color: rgb(0, 0, 0);
         font-size: 2rem;
         text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
     }
@@ -1075,21 +1077,19 @@ footer p{
         top: 35%;
         left: 32%;
         transform: translate(-50%, -50%);
-        color: rgb(0, 0, 0); /* o el color que prefieras */
+        color: rgb(0, 0, 0);
         font-size: 14px;
         text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
     }
     .marcas{
         background-color: black;
         display: flex;
-        flex-wrap: nowrap;
         justify-content: space-around;
         
     }
     .marcas img {
-        width: 150px;
-        border-radius: 300px;
-        
+        width: 110px;
+        border-radius: 300px;  
     }
 }
 @media (min-width: 1025px) {
@@ -1117,7 +1117,7 @@ footer p{
     }
     #imagen_perfect_combo{
         display: block;
-        width: 100%; /* o el tamaño que prefieras */ 
+        width: 100%; 
     }
     .contenedor_perfect_combo{
         position: relative;
@@ -1128,6 +1128,9 @@ footer p{
         position: absolute;
         top: 55%;
         left: 17.5%;
+        font-size: 18px;
+        font-style:italic;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         
     }
     #contenido1{
@@ -1136,7 +1139,7 @@ footer p{
         top: 45%;
         left: 32%;
         transform: translate(-50%, -50%);
-        color: rgb(0, 0, 0); /* o el color que prefieras */
+        color: rgb(0, 0, 0);
         font-size: 2rem;
         text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
     }
@@ -1146,7 +1149,7 @@ footer p{
         top: 35%;
         left: 32%;
         transform: translate(-50%, -50%);
-        color: rgb(0, 0, 0); /* o el color que prefieras */
+        color: rgb(0, 0, 0);
         font-size: 14px;
         text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
     }
@@ -1159,7 +1162,6 @@ footer p{
     }
     .marcas img {
         width: 150px;
-        border-radius: 300px;
-        
+        border-radius: 300px;   
     }
 }
